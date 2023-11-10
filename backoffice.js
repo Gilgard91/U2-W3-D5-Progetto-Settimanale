@@ -60,7 +60,19 @@ const handleSubmit = (event) => {
         "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTRkZWYwMzI1NGU4ODAwMTgzZjE4OGUiLCJpYXQiOjE2OTk2MDYyNzUsImV4cCI6MTcwMDgxNTg3NX0.djs-nQQziVGfyHVb7gGqd4aR2i_Q7DMGdTZV2cUH6g0",
       "Content-Type": "application/json"
     }
-  }).then((resp) => resp.json());
+  })
+    .then((resp) => resp.json())
+    .then((createdObj) => {
+      if (pianoId) {
+        alert(
+          "Risorsa con id: " +
+            createdObj._id +
+            " è stata modificata con successo!"
+        );
+      } else {
+        alert("Risorsa creata con successo con id: " + createdObj._id);
+      }
+    });
 
   console.log(articleObj);
 
@@ -79,11 +91,19 @@ const deleteArticle = () => {
   );
 
   if (hasAccepted) {
-    fetch(URL, { method: "DELETE" })
+    fetch(URL, {
+      method: "DELETE",
+      headers: {
+        Authorization:
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTRkZWYwMzI1NGU4ODAwMTgzZjE4OGUiLCJpYXQiOjE2OTk2MDYyNzUsImV4cCI6MTcwMDgxNTg3NX0.djs-nQQziVGfyHVb7gGqd4aR2i_Q7DMGdTZV2cUH6g0",
+        "Content-Type": "application/json"
+      }
+    })
       .then((resp) => resp.json())
       .then((deletedObj) => {
         alert("Hai eliminato " + deletedObj.name);
         window.location.assign("./index.html");
-      });
+      })
+      .catch((err) => console.log(err));
   }
 };
