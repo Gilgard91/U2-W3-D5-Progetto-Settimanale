@@ -109,5 +109,9 @@ const deleteArticle = () => {
 };
 
 const resetForm = () => {
-  document.getElementById("article-form").reset();
+  const hasAcceptedReset = confirm("Sei sicuro di voler resettare il form?");
+
+  if (hasAcceptedReset) {
+    document.getElementById("article-form").reset();
+  }
 };
