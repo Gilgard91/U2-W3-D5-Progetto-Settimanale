@@ -17,9 +17,11 @@ const fetchDetails = () => {
     .then((resp) => resp.json())
     .then((pianoObj) => {
       pianoDetailsWrapper.innerHTML = `
-        <h1>${pianoObj.name}</h1>
-        <img src="${pianoObj.imageUrl}" style="width:600px" class="mb-2" alt=""> 
-        <p>${pianoObj.description}</p>
+        <h1 class="details-title mb-5  px-3 py-2 ">${pianoObj.name}</h1>
+        <div class="d-flex align-items-center gap-4 mb-3">
+        <img src="${pianoObj.imageUrl}" style="width:550px; border-radius: 25px" class="details-img mb-2" alt=""> 
+        <p class="details-p">${pianoObj.description}</p>
+        </div>
         <p class="badge text-bg-dark fs-5">€${pianoObj.price}</p>
         
         <button class="btn btn-success mt-4 mb-5" onclick="handleClick()">Modifica Articolo</button>
@@ -28,5 +30,5 @@ const fetchDetails = () => {
 };
 
 const handleClick = () => {
-    window.location.assign("./backoffice.html?pianoId=" + pianoId)
-}
+  window.location.assign("./backoffice.html?pianoId=" + pianoId);
+};

@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Charm&family=Edu+TAS+Beginner:wght@400;500;600&family=Playball&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600&display=swap");
+
+@mixin animate-from-right(
+  $duration,
+  $start,
+  $end,
+  $delay: 0,
+  $name: from-right
+) {
+  $uniqueName: animate-#{$name}-#{unique-id()};
+  @keyframes #{$uniqueName} {
+    from {
+      opacity: 0;
+      transform: translateX($start);
+    }
+    to {
+      opacity: 1;
+      transform: translateX($end);
+    }
+  }
+
+  animation-name: #{$uniqueName};
+  animation-duration: $duration;
+  animation-fill-mode: both;
+  animation-delay: $delay;
+}
+
+.card {
+  @include animate-from-right(1s, 50px, 0, 200ms, from-right);
+}
+
+.details-title {
+  @include animate-from-right(1s, 0, 0, 200ms);
+  font-family: 'Charm', cursive;
+  font-size: 50px;
+}
+
+.details-img,
+.details-p {
+  @include animate-from-right(1s, 0, 0, 350ms);
+}
+
+.badge {
+  @include animate-from-right(1s, 0, 0, 1000ms);
+}
+
+body {
+  font-family: "Roboto Flex";
+}
+
+.details-p {
+    font-family: 'Charm', cursive;
+  font-size: 18px;
+}
+
+a.navbar-brand {
+    font-family: 'Charm', cursive;
+    font-size: 20px;
+}
