@@ -34,7 +34,7 @@
       <div class="row justify-content-center">
         <div class="col-md-8">
           <h2 id="backoffice-title" class="my-4 d-inline-block">Crea nuovo articolo</h2>
-          <form onsubmit="handleSubmit(event)">
+          <form id="article-form" onsubmit="handleSubmit(event)">
             <div class="mb-3">
               <label for="name" class="form-label">Nome</label>
               <input
@@ -101,6 +101,7 @@
             >
               Elimina
             </button>
+            <button type="button" id="reset-btn" class="btn btn-warning mb-5" onclick="resetForm()">Resetta</button>
           </form>
         </div>
       </div>

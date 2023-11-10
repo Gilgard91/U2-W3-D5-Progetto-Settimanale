@@ -22,7 +22,7 @@ window.onload = () => {
 
         document.getElementById("name").value = name;
         document.getElementById("brand").value = brand;
-        document.getElementById("image").value = imageUrl;
+        document.getElementById("image").src = imageUrl;
         document.getElementById("description").value = description;
         document.getElementById("price").value = price;
       })
@@ -37,6 +37,8 @@ window.onload = () => {
       "button[type='button'].btn-danger"
     );
     deleteBtn.classList.remove("d-none");
+    const resetBtn = document.getElementById("reset-btn");
+    resetBtn.classList.add("d-none");
   }
 };
 
@@ -46,8 +48,7 @@ const handleSubmit = (event) => {
   const articleObj = {
     name: document.getElementById("name").value,
     brand: document.getElementById("brand").value,
-    imageUrl:
-      "https://st3.depositphotos.com/1000212/16750/v/450/depositphotos_167507880-stock-illustration-musical-instrument-grand-piano.jpg",
+    imageUrl: document.getElementById("image").src,
     description: document.getElementById("description").value,
     price: document.getElementById("price").value
   };
@@ -65,12 +66,12 @@ const handleSubmit = (event) => {
     .then((createdObj) => {
       if (pianoId) {
         alert(
-          "Risorsa con id: " +
+          "L'articolo con id: " +
             createdObj._id +
-            " è stata modificata con successo!"
+            " è stato modificato con successo!"
         );
       } else {
-        alert("Risorsa creata con successo con id: " + createdObj._id);
+        alert("Articolo creato con successo con id: " + createdObj._id);
       }
     });
 
@@ -79,7 +80,6 @@ const handleSubmit = (event) => {
   if (!pianoId) {
     document.getElementById("name").value = "";
     document.getElementById("brand").value = "";
-
     document.getElementById("description").value = "";
     document.getElementById("price").value = "";
   }
@@ -106,4 +106,8 @@ const deleteArticle = () => {
       })
       .catch((err) => console.log(err));
   }
+};
+
+const resetForm = () => {
+  document.getElementById("article-form").reset();
 };

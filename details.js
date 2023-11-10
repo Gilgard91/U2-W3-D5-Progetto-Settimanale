@@ -20,7 +20,7 @@ const fetchDetails = () => {
         <h1>${pianoObj.name}</h1>
         <img src="${pianoObj.imageUrl}" style="width:600px" class="mb-2" alt=""> 
         <p>${pianoObj.description}</p>
-        <p>${pianoObj.price}€</p>
+        <p class="badge text-bg-dark fs-5">€${pianoObj.price}</p>
         
         <button class="btn btn-success mt-4 mb-5" onclick="handleClick()">Modifica Articolo</button>
     `;

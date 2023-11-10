@@ -31,7 +31,7 @@ const renderProducts = (obj) => {
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
                 <a href="./details.html?pianoId=${elem._id}" class="btn btn-sm btn-outline-secondary" role="button">
-                  Details
+                  Dettagli
                 </a>
               </div>
              
