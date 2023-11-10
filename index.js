@@ -33,9 +33,6 @@ const renderProducts = (obj) => {
                 <a href="./details.html?pianoId=${elem._id}" class="btn btn-sm btn-outline-secondary" role="button">
                   Details
                 </a>
-                <a href="#" class="btn btn-sm btn-outline-secondary" role="button">
-                  Edit
-                </a>
               </div>
              
             </div>
