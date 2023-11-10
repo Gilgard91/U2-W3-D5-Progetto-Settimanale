@@ -25,13 +25,13 @@ const renderProducts = (obj) => {
     pianoWrapper.innerHTML += ` <div class="col col-sm-6 col-md-4">
         <div class="card mb-4 shadow-sm">
           <img class="card-img-top" style="height:350px; object-fit:cover" src="${elem.imageUrl}" alt="Card image cap">
-          <div class="card-body">
+          <div class="card-body text-center">
             <h5>${elem.name}</h5>
            
-            <div class="d-flex justify-content-between align-items-center">
+            <div class>
               <div class="btn-group">
-                <a href="./details.html?pianoId=${elem._id}" class="btn btn-sm btn-outline-secondary" role="button">
-                  Dettagli
+                <a href="./details.html?pianoId=${elem._id}" class="btn btn-sm btn-outline-secondary mt-2" role="button">
+                  Scopri di più
                 </a>
                 
               </div>
