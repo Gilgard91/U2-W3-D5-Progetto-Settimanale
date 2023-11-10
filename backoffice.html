@@ -15,7 +15,8 @@
     <header>
       <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
         <div class="container-md">
-          <a class="navbar-brand" href="#">Steinway & Sons</a>
+          <img src="./assets/img/logo.png" style="width: 30px" alt="logo" />
+          <a class="navbar-brand" href="./index.html">Steinway & Sons</a>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -33,7 +34,9 @@
     <div class="container-md">
       <div class="row justify-content-center">
         <div class="col-md-8">
-          <h2 id="backoffice-title" class="my-4 d-inline-block">Crea nuovo articolo</h2>
+          <h2 id="backoffice-title" class="my-4 d-inline-block">
+            Crea nuovo articolo
+          </h2>
           <form id="article-form" onsubmit="handleSubmit(event)">
             <div class="mb-3">
               <label for="name" class="form-label">Nome</label>
@@ -47,16 +50,16 @@
               />
             </div>
             <div class="mb-3">
-                <label for="brand" class="form-label">Brand</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="brand"
-                  aria-describedby="brand"
-                  placeholder="Inserisci il brand"
-                  required
-                />
-              </div>
+              <label for="brand" class="form-label">Brand</label>
+              <input
+                type="text"
+                class="form-control"
+                id="brand"
+                aria-describedby="brand"
+                placeholder="Inserisci il brand"
+                required
+              />
+            </div>
             <div class="mb-3">
               <label for="image" class="form-label">Immagine</label>
               <input
@@ -66,7 +69,6 @@
                 aria-describedby="image"
                 src="https://st3.depositphotos.com/1000212/16750/v/450/depositphotos_167507880-stock-illustration-musical-instrument-grand-piano.jpg"
                 style="width: 300px"
-                
               />
             </div>
             <div class="mb-3">
@@ -101,7 +103,14 @@
             >
               Elimina
             </button>
-            <button type="button" id="reset-btn" class="btn btn-warning mb-5" onclick="resetForm()">Resetta</button>
+            <button
+              type="button"
+              id="reset-btn"
+              class="btn btn-warning mb-5"
+              onclick="resetForm()"
+            >
+              Resetta
+            </button>
           </form>
         </div>
       </div>
