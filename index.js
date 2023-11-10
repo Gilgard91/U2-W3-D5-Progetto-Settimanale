@@ -22,11 +22,11 @@ const fetchData = () => {
 const renderProducts = (obj) => {
   obj.forEach((elem) => {
     console.log(elem);
-    pianoWrapper.innerHTML += ` <div class="col col-sm-6 col-md-4">
-        <div class="card mb-4 shadow-sm">
+    pianoWrapper.innerHTML += ` <div class="col col-12 col-md-4">
+        <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
           <img class="card-img-top" style="height:350px; object-fit:cover" src="${elem.imageUrl}" alt="Card image cap">
           <div class="card-body text-center">
-            <h5>${elem.name}</h5>
+            <h5 class="mt-2">${elem.name}</h5>
            
             <div class>
               <div class="btn-group">
