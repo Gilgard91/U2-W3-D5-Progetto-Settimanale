@@ -18,7 +18,7 @@ const fetchDetails = () => {
     .then((pianoObj) => {
       pianoDetailsWrapper.innerHTML = `
         <h1 class="details-title mb-5  px-3 py-2 ">${pianoObj.name}</h1>
-        <div class="d-flex align-items-center gap-4 mb-3">
+        <div class="details-content d-flex align-items-center gap-4 mb-3">
         <img src="${
           pianoObj.imageUrl
         }" style="width:550px; border-radius: 25px" class="details-img mb-2 border border-dark" alt=""> 

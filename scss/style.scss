@@ -72,7 +72,7 @@ h5 {
 .footer-outer{
   font-size: 11px;
   color: #fbfbfb;
-  @include animate-from-right(1s, 0, 0, 200ms);
+  @include animate-from-right(1s, 0, 0, 1000ms);
 }
 
 .icons{
@@ -90,4 +90,23 @@ h5 {
 .span-wrapper span:hover{
   cursor: pointer;
   text-decoration: underline;
+}
+
+.piano-details img{
+  width:550px;
+}
+
+@media screen and (max-width: 1199px) {
+  .details-content{
+    flex-direction: column;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  .details-p{
+    padding: 0 3em;
+  }
+
+
 }

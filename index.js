@@ -22,7 +22,7 @@ const fetchData = () => {
 const renderProducts = (obj) => {
   obj.forEach((elem) => {
     console.log(elem);
-    pianoWrapper.innerHTML += ` <div class="col col-12 col-md-4">
+    pianoWrapper.innerHTML += ` <div class="col col-12 col-md-6 col-lg-4">
         <div class="card mb-4 shadow p-3 mb-5 bg-white rounded">
           <img class="card-img-top" style="height:350px; object-fit:cover" src="${elem.imageUrl}" alt="Card image cap">
           <div class="card-body text-center">
