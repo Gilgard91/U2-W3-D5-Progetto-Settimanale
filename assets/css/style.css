@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Charm&family=Edu+TAS+Beginner:wght@400;500;600&family=Playball&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600&display=swap");
 .card {
-  animation-name: animate-from-right-uww2uep;
+  animation-name: animate-from-right-ukkcu52;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 200ms;
 }
-@keyframes animate-from-right-uww2uep {
+@keyframes animate-from-right-ukkcu52 {
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -17,14 +17,14 @@
 }
 
 .details-title {
-  animation-name: animate-from-right-uww2uf5;
+  animation-name: animate-from-right-ukkcu5l;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 200ms;
   font-family: "Charm", cursive;
   font-size: 50px;
 }
-@keyframes animate-from-right-uww2uf5 {
+@keyframes animate-from-right-ukkcu5l {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -37,12 +37,12 @@
 
 .details-img,
 .details-p {
-  animation-name: animate-from-right-uww2ufa;
+  animation-name: animate-from-right-ukkcu6f;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 350ms;
 }
-@keyframes animate-from-right-uww2ufa {
+@keyframes animate-from-right-ukkcu6f {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -54,14 +54,14 @@
 }
 
 .badge {
-  animation-name: animate-from-right-uww2ufw;
+  animation-name: animate-from-right-ukkcu71;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 1000ms;
   background-color: #5a5a5a;
   color: #fbfbfb;
 }
-@keyframes animate-from-right-uww2ufw {
+@keyframes animate-from-right-ukkcu71 {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -94,13 +94,13 @@ h5 {
 
 .footer-outer {
   font-size: 11px;
-  color: #fbfbfb;
-  animation-name: animate-from-right-uww2ugw;
+  color: #96989a;
+  animation-name: animate-from-right-ukkcu7u;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 1000ms;
 }
-@keyframes animate-from-right-uww2ugw {
+@keyframes animate-from-right-ukkcu7u {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -120,7 +120,7 @@ h5 {
 }
 
 .span-wrapper {
-  border-bottom: 1px solid #fbfbfb;
+  border-bottom: 1px solid #96989a;
 }
 
 .span-wrapper span:hover {
