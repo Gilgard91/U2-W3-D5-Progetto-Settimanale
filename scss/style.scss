@@ -25,6 +25,8 @@
   animation-delay: $delay;
 }
 
+
+
 .card {
   @include animate-from-right(1s, 50px, 0, 200ms, from-right);
 }
@@ -49,7 +51,6 @@
 body {
   font-family: "Roboto Flex";
   background-color: #fbfbfb;
-  
 }
 
 .details-p {
@@ -57,56 +58,67 @@ body {
   font-size: 18px;
 }
 
+.navbar{
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index: 999;
+}
+
+#piano-details-wrapper, #backoffice-wrapper{
+  margin-top: 4.5em;
+}
+
+#piano-wrapper{
+  margin-top: 6.5em;
+}
+
 a.navbar-brand {
   font-family: "Charm", cursive;
   font-size: 20px;
 }
-
-
 
 h5 {
   font-weight: 600;
   font-size: 25px;
 }
 
-.footer-outer{
+.footer-outer {
   font-size: 11px;
   color: #96989a;
   @include animate-from-right(1s, 0, 0, 1000ms);
 }
 
-.icons{
+.icons {
   font-size: 15px;
 }
 
-.icons i.bi{
+.icons i.bi {
   cursor: pointer;
 }
 
-.span-wrapper{
+.span-wrapper {
   border-bottom: 1px solid #96989a;
 }
 
-.span-wrapper span:hover{
+.span-wrapper span:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 
-.piano-details img{
-  width:550px;
+.piano-details img {
+  width: 550px;
 }
 
 @media screen and (max-width: 1199px) {
-  .details-content{
+  .details-content {
     flex-direction: column;
   }
-  
 }
 
 @media screen and (max-width: 767px) {
-  .details-p{
+  .details-p {
     padding: 0 3em;
   }
-
-
 }

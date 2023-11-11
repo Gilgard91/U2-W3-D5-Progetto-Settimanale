@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Charm&family=Edu+TAS+Beginner:wght@400;500;600&family=Playball&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600&display=swap");
 .card {
-  animation-name: animate-from-right-ukkcu52;
+  animation-name: animate-from-right-ukkcyrt;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 200ms;
 }
-@keyframes animate-from-right-ukkcu52 {
+@keyframes animate-from-right-ukkcyrt {
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -17,14 +17,14 @@
 }
 
 .details-title {
-  animation-name: animate-from-right-ukkcu5l;
+  animation-name: animate-from-right-ukkcysr;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 200ms;
   font-family: "Charm", cursive;
   font-size: 50px;
 }
-@keyframes animate-from-right-ukkcu5l {
+@keyframes animate-from-right-ukkcysr {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -37,12 +37,12 @@
 
 .details-img,
 .details-p {
-  animation-name: animate-from-right-ukkcu6f;
+  animation-name: animate-from-right-ukkcysz;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 350ms;
 }
-@keyframes animate-from-right-ukkcu6f {
+@keyframes animate-from-right-ukkcysz {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -54,14 +54,14 @@
 }
 
 .badge {
-  animation-name: animate-from-right-ukkcu71;
+  animation-name: animate-from-right-ukkcyt5;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 1000ms;
   background-color: #5a5a5a;
   color: #fbfbfb;
 }
-@keyframes animate-from-right-ukkcu71 {
+@keyframes animate-from-right-ukkcyt5 {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -82,6 +82,22 @@ body {
   font-size: 18px;
 }
 
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#piano-details-wrapper, #backoffice-wrapper {
+  margin-top: 4.5em;
+}
+
+#piano-wrapper {
+  margin-top: 6.5em;
+}
+
 a.navbar-brand {
   font-family: "Charm", cursive;
   font-size: 20px;
@@ -95,12 +111,12 @@ h5 {
 .footer-outer {
   font-size: 11px;
   color: #96989a;
-  animation-name: animate-from-right-ukkcu7u;
+  animation-name: animate-from-right-ukkcyt6;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 1000ms;
 }
-@keyframes animate-from-right-ukkcu7u {
+@keyframes animate-from-right-ukkcyt6 {
   from {
     opacity: 0;
     transform: translateX(0);
