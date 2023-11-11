@@ -21,7 +21,7 @@ const fetchDetails = () => {
         <div class="details-content d-flex align-items-center gap-4 mb-3">
         <img src="${
           pianoObj.imageUrl
-        }" style="width:550px; border-radius: 25px" class="details-img mb-2 border border-dark" alt=""> 
+        }" style="width:500px; border-radius: 25px" class="details-img mb-2 border border-dark" alt=""> 
         <p class="details-p">${pianoObj.description}</p>
         </div>
         <p class="badge  fs-5">${pianoObj.price.toLocaleString(
