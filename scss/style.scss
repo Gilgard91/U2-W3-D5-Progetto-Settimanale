@@ -31,7 +31,7 @@
 
 .details-title {
   @include animate-from-right(1s, 0, 0, 200ms);
-  font-family: 'Charm', cursive;
+  font-family: "Charm", cursive;
   font-size: 50px;
 }
 
@@ -42,23 +42,52 @@
 
 .badge {
   @include animate-from-right(1s, 0, 0, 1000ms);
+  background-color: #5a5a5a;
+  color: #fbfbfb;
 }
 
 body {
   font-family: "Roboto Flex";
+  background-color: #fbfbfb;
+  
 }
 
 .details-p {
-    font-family: 'Charm', cursive;
+  font-family: "Charm", cursive;
   font-size: 18px;
 }
 
 a.navbar-brand {
-    font-family: 'Charm', cursive;
-    font-size: 20px;
+  font-family: "Charm", cursive;
+  font-size: 20px;
 }
 
-h5{
-    font-weight: 600;
-    font-size: 25px;
+
+
+h5 {
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.footer-outer{
+  font-size: 11px;
+  color: #fbfbfb;
+  @include animate-from-right(1s, 0, 0, 200ms);
+}
+
+.icons{
+  font-size: 15px;
+}
+
+.icons i.bi{
+  cursor: pointer;
+}
+
+.span-wrapper{
+  border-bottom: 1px solid #fbfbfb;
+}
+
+.span-wrapper span:hover{
+  cursor: pointer;
+  text-decoration: underline;
 }

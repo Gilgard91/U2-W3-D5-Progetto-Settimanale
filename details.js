@@ -19,10 +19,15 @@ const fetchDetails = () => {
       pianoDetailsWrapper.innerHTML = `
         <h1 class="details-title mb-5  px-3 py-2 ">${pianoObj.name}</h1>
         <div class="d-flex align-items-center gap-4 mb-3">
-        <img src="${pianoObj.imageUrl}" style="width:550px; border-radius: 25px" class="details-img mb-2" alt=""> 
+        <img src="${
+          pianoObj.imageUrl
+        }" style="width:550px; border-radius: 25px" class="details-img mb-2 border border-dark" alt=""> 
         <p class="details-p">${pianoObj.description}</p>
         </div>
-        <p class="badge text-bg-dark fs-5">€${pianoObj.price}</p>
+        <p class="badge  fs-5">${pianoObj.price.toLocaleString(
+          "it-IT",
+          { style: "currency", currency: "EUR" }
+        )}</p>
         
         <button class="btn btn-success mt-4 mb-5" onclick="handleClick()">Modifica Articolo</button>
     `;
