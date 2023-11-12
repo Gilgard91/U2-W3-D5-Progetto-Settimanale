@@ -141,6 +141,10 @@ h5 {
 .piano-details img {
   width: 550px;
 }
+
+.backoffice{
+  margin-left: 4.9em;
+}
 // #product-input{
 //   position:relative;
 // }
@@ -164,5 +168,9 @@ h5 {
 @media screen and (max-width: 767px) {
   .details-p {
     padding: 0 3em;
+  }
+
+  .backoffice {
+    display: none;
   }
 }

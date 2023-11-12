@@ -33,7 +33,6 @@ const searchProducts = (obj) => {
     filteredObj.forEach((piano) => {
       if (inputValue !== "") {
         dropdownSearch.innerHTML += `<a class="dropdown-item" href="./details.html?pianoId=${piano._id}">${piano.name}</a>`;
-        
       }
     });
   });

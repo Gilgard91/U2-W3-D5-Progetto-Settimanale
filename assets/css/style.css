@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Charm&family=Edu+TAS+Beginner:wght@400;500;600&family=Noto+Serif:wght@400;500;600;700&family=Playball&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600&display=swap");
 .card {
-  animation-name: animate-from-right-uijlvwe;
+  animation-name: animate-from-right-unwmksn;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 200ms;
 }
-@keyframes animate-from-right-uijlvwe {
+@keyframes animate-from-right-unwmksn {
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -17,14 +17,14 @@
 }
 
 .details-title {
-  animation-name: animate-from-right-uijlvww;
+  animation-name: animate-from-right-unwmktd;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 200ms;
   font-family: "Charm", cursive;
   font-size: 50px;
 }
-@keyframes animate-from-right-uijlvww {
+@keyframes animate-from-right-unwmktd {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -37,12 +37,12 @@
 
 .details-img,
 .details-p {
-  animation-name: animate-from-right-uijlvxm;
+  animation-name: animate-from-right-unwmktk;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 350ms;
 }
-@keyframes animate-from-right-uijlvxm {
+@keyframes animate-from-right-unwmktk {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -54,14 +54,14 @@
 }
 
 .badge {
-  animation-name: animate-from-right-uijlvxn;
+  animation-name: animate-from-right-unwmktl;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 1000ms;
   background-color: #5a5a5a;
   color: #fbfbfb;
 }
-@keyframes animate-from-right-uijlvxn {
+@keyframes animate-from-right-unwmktl {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -112,12 +112,12 @@ h5 {
 .footer-outer {
   font-size: 11px;
   color: #96989a;
-  animation-name: animate-from-right-uijlvyf;
+  animation-name: animate-from-right-unwmku6;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 500ms;
 }
-@keyframes animate-from-right-uijlvyf {
+@keyframes animate-from-right-unwmku6 {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -185,6 +185,10 @@ h5 {
   width: 550px;
 }
 
+.backoffice {
+  margin-left: 4.9em;
+}
+
 .list {
   margin-top: 4.4em;
 }
@@ -197,5 +201,8 @@ h5 {
 @media screen and (max-width: 767px) {
   .details-p {
     padding: 0 3em;
+  }
+  .backoffice {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
