@@ -86,7 +86,7 @@ h5 {
 .footer-outer {
   font-size: 11px;
   color: #96989a;
-  @include animate-from-right(1s, 0, 0, 1000ms);
+  @include animate-from-right(1s, 0, 0, 500ms);
 }
 
 .icons {
@@ -106,8 +106,53 @@ h5 {
   text-decoration: underline;
 }
 
+.dropdown-item:hover {
+  text-decoration: underline;
+}
+
+.list {
+  margin-top: 4.4em;
+  margin-bottom: 0;
+}
+
+.search-form {
+  background-color: #9e8761;
+  border: none;
+  font-size: 15px;
+}
+
+.search-form::placeholder {
+  color: black;
+}
+
+.search-form:focus {
+  background-color: #9e8761;
+  outline: 0;
+  box-shadow: none;
+}
+
+.search-form::-webkit-search-cancel-button,
+.search-form::-webkit-search-clear-button {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+
 .piano-details img {
   width: 550px;
+}
+// #product-input{
+//   position:relative;
+// }
+// #product-dropdown {
+//   position: absolute;
+//   z-index: 1000;
+//   top: 0;
+//   right: 0;
+// }
+
+.list {
+  margin-top: 4.4em;
 }
 
 @media screen and (max-width: 1199px) {

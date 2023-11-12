@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Charm&family=Edu+TAS+Beginner:wght@400;500;600&family=Noto+Serif:wght@400;500;600;700&family=Playball&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600&display=swap");
 .card {
-  animation-name: animate-from-right-uij3ahr;
+  animation-name: animate-from-right-uijlvwe;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 200ms;
 }
-@keyframes animate-from-right-uij3ahr {
+@keyframes animate-from-right-uijlvwe {
   from {
     opacity: 0;
     transform: translateX(50px);
@@ -17,14 +17,14 @@
 }
 
 .details-title {
-  animation-name: animate-from-right-uij3aik;
+  animation-name: animate-from-right-uijlvww;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 200ms;
   font-family: "Charm", cursive;
   font-size: 50px;
 }
-@keyframes animate-from-right-uij3aik {
+@keyframes animate-from-right-uijlvww {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -37,12 +37,12 @@
 
 .details-img,
 .details-p {
-  animation-name: animate-from-right-uij3ajd;
+  animation-name: animate-from-right-uijlvxm;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 350ms;
 }
-@keyframes animate-from-right-uij3ajd {
+@keyframes animate-from-right-uijlvxm {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -54,14 +54,14 @@
 }
 
 .badge {
-  animation-name: animate-from-right-uij3ajp;
+  animation-name: animate-from-right-uijlvxn;
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-delay: 1000ms;
   background-color: #5a5a5a;
   color: #fbfbfb;
 }
-@keyframes animate-from-right-uij3ajp {
+@keyframes animate-from-right-uijlvxn {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -112,12 +112,12 @@ h5 {
 .footer-outer {
   font-size: 11px;
   color: #96989a;
-  animation-name: animate-from-right-uij3aju;
+  animation-name: animate-from-right-uijlvyf;
   animation-duration: 1s;
   animation-fill-mode: both;
-  animation-delay: 1000ms;
+  animation-delay: 500ms;
 }
-@keyframes animate-from-right-uij3aju {
+@keyframes animate-from-right-uijlvyf {
   from {
     opacity: 0;
     transform: translateX(0);
@@ -145,8 +145,48 @@ h5 {
   text-decoration: underline;
 }
 
+.dropdown-item:hover {
+  text-decoration: underline;
+}
+
+.list {
+  margin-top: 4.4em;
+  margin-bottom: 0;
+}
+
+.search-form {
+  background-color: #9e8761;
+  border: none;
+  font-size: 15px;
+}
+
+.search-form::-moz-placeholder {
+  color: black;
+}
+
+.search-form::placeholder {
+  color: black;
+}
+
+.search-form:focus {
+  background-color: #9e8761;
+  outline: 0;
+  box-shadow: none;
+}
+
+.search-form::-webkit-search-cancel-button,
+.search-form::-webkit-search-clear-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
 .piano-details img {
   width: 550px;
+}
+
+.list {
+  margin-top: 4.4em;
 }
 
 @media screen and (max-width: 1199px) {

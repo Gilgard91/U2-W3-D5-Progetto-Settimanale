@@ -1,6 +1,5 @@
 const pianoWrapper = document.getElementById("piano-wrapper");
 
-
 window.onload = () => {
   fetchData();
 };
@@ -15,8 +14,29 @@ const fetchData = () => {
   })
     .then((resp) => resp.json())
 
-    .then((pianos) => renderProducts(pianos))
+    .then((pianos) => {
+      renderProducts(pianos);
+      searchProducts(pianos);
+    })
     .catch((err) => console.log(err));
+};
+
+const searchProducts = (obj) => {
+  document.getElementById("product-input").addEventListener("keyup", (e) => {
+    let inputValue = e.target.value;
+    let filteredObj = obj.filter((elem) =>
+      elem.name.toLowerCase().includes(inputValue.toLowerCase())
+    );
+    console.log(filteredObj);
+    const dropdownSearch = document.getElementById("product-dropdown");
+    dropdownSearch.innerHTML = "";
+    filteredObj.forEach((piano) => {
+      if (inputValue !== "") {
+        dropdownSearch.innerHTML += `<a class="dropdown-item" href="./details.html?pianoId=${piano._id}">${piano.name}</a>`;
+        
+      }
+    });
+  });
 };
 
 const renderProducts = (obj) => {
@@ -42,5 +62,3 @@ const renderProducts = (obj) => {
       </div>`;
   });
 };
-
-
